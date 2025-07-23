@@ -1,3 +1,12 @@
+// Smooth scroll for navigation links
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+// Code for contact form validation and submission
 document.addEventListener("DOMContentLoaded", () => {
 const form = document.getElementById("contactForm");
 const formStatus = document.getElementById("formStatus");
@@ -66,3 +75,4 @@ window.addEventListener("scroll", () => {
 backToTopBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+

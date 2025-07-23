@@ -3,6 +3,15 @@ window.addEventListener("scroll", () => {
   const nav = document.querySelector(".navbar");
   nav.classList.toggle("scrolled", window.scrollY > 50);
 });
+
+// Smooth scroll for navigation links
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
 // Scroll reveal for skill cards and interest cards
 const skillCards = document.querySelectorAll('.skills-grid .skill-card');
 const interestCards = document.querySelectorAll('.interests-grid .interest-card');
