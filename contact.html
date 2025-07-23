@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Areesha Malik</title>
+  <link rel="stylesheet" href="assets/css/contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/images/logo.png" alt="Logo" />
+        <span>Areesha Malik</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Intro -->
+  <section class="contact-hero scroll-reveal">
+    <h1>Let’s Connect</h1>
+    <p>Have a question, project, or just want to say hi? I'd love to hear from you!</p>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section scroll-reveal">
+    <div class="contact-form">
+      <form id="contactForm" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" placeholder=" " />
+          <label for="name">Full Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" placeholder=" " required />
+          <label for="email">Email Address</label>
+        </div>
+        <div class="form-group">
+          <input type="text" id="subject" placeholder=" " required />
+          <label for="subject">Subject</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" rows="5" placeholder=" " required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+        <button type="submit" class="cta-btn">Send Message</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </div>
+    <div class="contact-info">
+      <h3>Reach Me At</h3>
+      <p><i class="fas fa-envelope"></i> arshmalik2721@gmail.com</p>
+      <p><i class="fas fa-phone"></i> 0342-5576901</p>
+      <p><i class="fas fa-map-marker-alt"></i> Chehla Bandi, Muzaffarabad</p>
+      <div class="map">
+        <iframe src="https://maps.google.com/maps?q=chehla%20bandi%20muzaffarabad&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          title="Location Map" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>✉️ arshmalik2721@gmail.com</p>
+        <p>📞 0342-5576901</p>
+        <p>📍 Chehla Bandi, Muzaffarabad</p>
+      </div>
+      <div class="footer-social">
+        <h3>Follow Me</h3>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/17GsFPuAoN/"><img src="assets/images/facebook.png" alt="Facebook" /></a>
+          <a href="https://www.instagram.com/arsh.____.malixk?igsh=MWp5OXUweHY4eDZsYw=="><img src="assets/images/instagram.png" alt="Instagram" /></a>
+          <a href="https://www.linkedin.com/in/areesha-malik-01147031a/overlay/about-this-profile/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BARKV6peRSGmW3RL4lXCP3g%3D%3D"><img src="assets/images/linkedin.png" alt="LinkedIn" /></a>
+        </div>
+      </div>
+    </div>
+    <p class="footer-credit">&copy; 2025 Areesha Malik | Portfolio</p>
+  </footer>
+
+  <script src="assets/js/contact.js"></script>
+</body>
+</html>
