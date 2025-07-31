@@ -18,13 +18,24 @@ window.onload = () => {
 // Add Task
 addBtn.addEventListener("click", () => {
   const taskText = input.value.trim();
-  if (taskText !== "") {
-    createTaskElement(taskText, false);
-    tasks.push({ text: taskText, completed: false });
-    saveTasks();
-    input.value = "";
+
+  if (taskText === "") {
+    input.classList.add("shake");
+
+    // Remove shake effect after animation ends
+    setTimeout(() => {
+      input.classList.remove("shake");
+    }, 300);
+
+    return;
   }
+
+  createTaskElement(taskText, false);
+  tasks.push({ text: taskText, completed: false });
+  saveTasks();
+  input.value = "";
 });
+
 
 // Theme Toggle
 themeBtn.addEventListener("click", () => {

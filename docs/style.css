@@ -162,6 +162,18 @@ h1 {
 .delete-btn:hover {
   background: darkred;
 }
+/* Shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+.shake {
+  animation: shake 0.3s ease;
+  border-color: red !important;
+}
+
 /* Mobile-first */
 @media (max-width: 500px) {
   .todo-input {
