@@ -1,0 +1,83 @@
+:root {
+  --bg-color: #1e1e2f;
+  --display-bg: rgba(0, 0, 0, 0.5);
+  --btn-bg: rgba(255, 255, 255, 0.1);
+  --btn-hover: rgba(255, 255, 255, 0.2);
+  --accent: #4fc3f7;
+  --equal: #13c3d6;
+  --text-color: #ffffff;
+  --font: 'Segoe UI', sans-serif;
+}
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.calculator {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 100%;
+  max-width: 360px;
+}
+#display {
+  background: var(--display-bg);
+  color: var(--text-color);
+  padding: 20px;
+  font-size: 2.5rem;
+  text-align: right;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow-x: auto;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.btn {
+  background: var(--btn-bg);
+  border: none;
+  border-radius: 12px;
+  padding: 18px 0;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+.btn:hover {
+  background: var(--btn-hover);
+}
+.operator {
+  color: var(--accent);
+}
+.control {
+  color: #ff5f5f;
+}
+.equal {
+  grid-column: span 2;
+  background: var(--equal);
+  color: #000;
+  font-weight: bold;
+}
+.equal:hover {
+  background: #00bcd4;
+}
+@media (max-width: 420px) {
+  #display {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 16px 0;
+  }
+}
