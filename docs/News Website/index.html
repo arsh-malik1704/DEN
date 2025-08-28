@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NewsWave - Dynamic News Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+
+    <!-- === Top Bar: Logo + Date === -->
+    <div class="top-bar container">
+      <a href="#" class="logo">NewsWave</a>
+      <div id="current-date"></div>
+    </div>
+
+    <!-- === Navigation Bar: Menu + Search === -->
+    <nav class="navbar">
+      <div class="nav-container container">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#" data-category="general" class="active">Home</a></li>
+          <li><a href="#" data-category="world">World</a></li>
+          <li><a href="#" data-category="technology">Technology</a></li>
+          <li><a href="#" data-category="sports">Sports</a></li>
+          <li><a href="#" data-category="entertainment">Entertainment</a></li>
+        </ul>
+
+        <!-- === Search in nav === -->
+        <div class="search">
+          <input type="text" id="search-input" placeholder="Search news...">
+          <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- === Hamburger === -->
+        <div class="hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main class="container">
+    <div id="status-message"></div>
+    <div id="news-container"></div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/17GsFPuAoN/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/ArshMalik2721?s=09"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/arsh.____.malixk?igsh=MWp5OXUweHY4eDZsYw=="><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2025 NewsWave. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
