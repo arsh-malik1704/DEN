@@ -1,5 +1,6 @@
 [build]
-  publish = "."
+  publish = "docs/News Website"
+  functions = "netlify/functions"
 
 [[redirects]]
   from = "/api/*"

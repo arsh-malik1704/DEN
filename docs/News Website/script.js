@@ -19,16 +19,9 @@ async function fetchNews(query = "", category = "general") {
     statusMessage.textContent = "Loading news...";
     newsContainer.innerHTML = "";
 
-    let url;
-
-    if (category === "world") {
-      // Use "everything" for world news
-      url = `https://newsapi.org/v2/everything?q=world&language=en&apiKey=${API_KEY}`;
-    } else if (query) {
-      url = `https://newsapi.org/v2/everything?q=${encodeURIComponent(query)}&language=en&apiKey=${API_KEY}`;
-    } else {
-      url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`;
-    }
+    let url = query
+      ? `/api/news?q=${encodeURIComponent(query)}`
+      : `/api/news?category=${category}`;
 
     const res = await fetch(url);
     if (!res.ok) throw new Error("Failed to fetch news");
