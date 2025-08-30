@@ -1,12 +1,12 @@
 [build]
-  publish = "docs/News Website"
-  functions = "netlify/functions"
+  publish = "docs/News Website"
+  functions = "docs/netlify/functions"
 
 [functions]
   node_bundler = "esbuild"
-  directory = "netlify/functions"
+  external_node_modules = ["node-fetch"]
 
 [[redirects]]
-  from = "/api/*"
-  to = "/.netlify/functions/:splat"
-  status = 200
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200
