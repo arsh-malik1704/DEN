@@ -19,9 +19,9 @@ async function fetchNews(query = "", category = "general") {
     statusMessage.textContent = "Loading news...";
     newsContainer.innerHTML = "";
 
-    let url = query
-  ? `/.netlify/functions/news?q=${encodeURIComponent(query)}`
-  : `/.netlify/functions/news?category=${category}`;
+   let url = query
+  ? `/api/news?q=${encodeURIComponent(query)}`
+  : `/api/news?category=${category}`;
 
     const res = await fetch(url);
     if (!res.ok) throw new Error("Failed to fetch news");
