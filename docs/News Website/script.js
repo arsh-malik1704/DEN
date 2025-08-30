@@ -20,8 +20,8 @@ async function fetchNews(query = "", category = "general") {
     newsContainer.innerHTML = "";
 
    let url = query
-  ? `/api/news?q=${encodeURIComponent(query)}`
-  : `/api/news?category=${category}`;
+  ? `/api/news?q=${encodeURIComponent(query)}`
+  : `/api/news?category=${category}`;
 
     const res = await fetch(url);
     if (!res.ok) throw new Error("Failed to fetch news");
